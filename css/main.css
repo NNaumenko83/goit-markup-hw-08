@@ -91,7 +91,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  max-width: 480px;
 }
 
 .section {
@@ -101,13 +101,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.header__container,
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .logo {
@@ -226,13 +219,12 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-image_new.jpg);
   background-color: #c4c4c4;
   background-size: cover;
   background-position: center;
@@ -265,22 +257,17 @@ body {
 }
 
 .features {
-  padding-bottom: 0;
+  padding: 60px 15px;
 }
 
 .features-list__box-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
-  margin: 0 auto 30px;
+  margin: 30px auto;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.features-list {
-  display: flex;
 }
 
 .features-list__title {
@@ -297,11 +284,12 @@ body {
   line-height: 1.71;
 }
 
-.features-list__item {
-  width: 270px;
-}
 .features-list__item:not(:first-child) {
   margin-left: 30px;
+}
+
+.about {
+  display: none;
 }
 
 .about__main-title {
@@ -342,19 +330,13 @@ body {
   margin-bottom: 50px;
 }
 
-.team-list {
-  display: flex;
-}
-
 .team-list__item {
-  flex-basis: calc((100% - 90px) / 4);
-  width: 270px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-list__title {
@@ -414,13 +396,14 @@ body {
 }
 
 .clients-list {
+  max-width: 480px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients-list__item {
-  width: 170px;
-  height: 92px;
+  width: calc((100% - 60px) / 2);
 }
 
 .clients-list__link {
@@ -436,6 +419,23 @@ body {
 .clients-list__link:hover, .clients-list__link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
+}
+
+.footer {
+  padding: 60px 15px;
+  background-color: #2f303a;
+}
+
+.footer__adress-box {
+  text-align: center;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .backdrop {
@@ -664,39 +664,8 @@ body {
   margin-left: 10px;
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #2f303a;
-}
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__logo {
-  margin-bottom: 20px;
-}
-
-.footer__adress-box {
-  margin-right: 70px;
-}
-
-.footer__text {
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.footer__subscr {
-  margin-left: auto;
-}
-
 .footer__adress {
-  max-width: 231px;
+  max-width: 480px;
 }
 
 .adress-list__item:not(:last-child) {
@@ -713,10 +682,6 @@ body {
 }
 .adress-list__link:hover, .adress-list__link:focus {
   color: #2196f3;
-}
-
-.subscr-form {
-  display: flex;
 }
 
 .subscr-form__input {

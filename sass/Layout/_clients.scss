@@ -5,13 +5,17 @@
 .clients-list {
 	@extend %list;
 
+	max-width: 480px;
+
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
+	// gap: 30px;
 }
 
 .clients-list__item {
-	width: 170px;
-	height: 92px;
+	width: calc((100% - (15px * 4)) / 2);
+	// height:92px;
 }
 
 .clients-list__icon {

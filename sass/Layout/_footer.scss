@@ -1,20 +1,21 @@
 .footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 60px 15px;
+
 	background-color: $third-background-color;
 }
 
-.footer__container {
-	display: flex;
-	align-items: baseline;
-}
+.
+// .footer__container {
+// 	display: flex;
+// 	align-items: baseline;
+// }
 
-.footer__logo {
-	margin-bottom: 20px;
-}
+// .footer__logo {
+// 	margin-bottom: 20px;
+// }
 
 .footer__adress-box {
-	margin-right: 70px;
+	text-align: center;
 }
 
 .footer__text {
@@ -27,6 +28,6 @@
 	color: $third-text-color;
 }
 
-.footer__subscr {
-	margin-left: auto;
-}
+// .footer__subscr {
+// 	margin-left: auto;
+// }
