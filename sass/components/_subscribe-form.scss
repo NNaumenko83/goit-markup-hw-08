@@ -1,0 +1,38 @@
+.subscr-form {
+	display: flex;
+}
+
+.subscr-form__input {
+	width: 358px;
+	height: 50px;
+	padding-left: 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: $main-border-radius;
+
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: $main-letter-spacing;
+
+	color: rgba(255, 255, 255, 0.6);
+
+	background-color: transparent;
+
+	@extend %transition;
+
+	cursor: pointer;
+
+	&::placeholder {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: $main-letter-spacing;
+
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+	}
+}

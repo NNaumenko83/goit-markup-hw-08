@@ -1,0 +1,31 @@
+.logo {
+	@extend %link;
+
+	display: block;
+	font-family: $second-font-family;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+}
+
+.logo__word-web {
+	color: $logo-first-color;
+}
+
+.logo__word-studio {
+	color: $logo-second-color;
+
+	&--inverse {
+		color: $logo-second-color-inverse;
+	}
+}
+
+.header_logo {
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
+.logo__link {
+	display: block;
+}

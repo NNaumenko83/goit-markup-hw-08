@@ -1,0 +1,36 @@
+.contacts {
+	@include centeredFlex($ai: normal, $jc: normal);
+	@extend %list;
+}
+
+.header__contacts {
+	margin-left: auto;
+}
+
+.contacts__link {
+	@include centeredFlex($jc: flex-start);
+	@extend %link;
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+
+	color: currentColor;
+
+	@extend %transition;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.contacts__item:not(:first-child) {
+	margin-left: 50px;
+}
+
+.contacts__icon {
+	@extend %icon;
+	margin-right: 10px;
+}
