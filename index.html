@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Студія-hw7</title>
+		<title>Студія-hw8</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -28,6 +28,14 @@
 					<a href="./index.html" lang="en" class="logo header_logo">
 						<span class="logo__word-web">Web</span><span class="logo__word-studio">Studio</span>
 					</a>
+
+					<!-- ---------Кнопка меню для мобілки--------- -->
+					<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+						<svg class="" width="40" height="40" aria-label="Перемикач мобільного меню">
+							<use class="icon-menu" href="./images/symbol-defs-new.svg#icon-menu_40px"></use>
+						</svg>
+					</button>
+
 					<!-- ---------Навігація по сайту--------- -->
 					<ul class="site-nav">
 						<li class="site-nav__item">
@@ -172,7 +180,15 @@
 
 					<ul class="team-list">
 						<li class="team-list__item">
-							<img src="./images/command-img-1.jpg" alt="Фото сотрудника" width="270" height="260" />
+							<img
+								srcset="
+									./images/Mobile-images/Team-1-img-optim-450.jpg 450w,
+									./images/Mobile-images/Team-1-img-optim-900.jpg 900w
+								"
+								src="./images/Mobile-images/Team-1-img-optim-450.jpg"
+								alt="Фото сотрудника"
+								sizes="(100vw)"
+							/>
 							<div class="team-list__card">
 								<h3 class="team-list__title">Ігор Дем'яненко</h3>
 								<p lang="en" class="team-list__text">Product Designer</p>
@@ -206,7 +222,15 @@
 						</li>
 
 						<li class="team-list__item">
-							<img src="./images/command-img-2.jpg" alt="Фото сотрудника" width="270" height="260" />
+							<img
+								srcset="
+									./images/Mobile-images/Team-2-img-optim-450.jpg 450w,
+									./images/Mobile-images/Team-2-img-optim-900.jpg 900w
+								"
+								src="./images/Mobile-images/Team-2-img-optim-450.jpg"
+								alt="Фото сотрудника"
+								sizes="(100vw)"
+							/>
 
 							<div class="team-list__card">
 								<h3 class="team-list__title">Ольга Рєпіна</h3>
@@ -241,7 +265,15 @@
 						</li>
 
 						<li class="team-list__item">
-							<img src="./images/command-img-3.jpg" alt="Фото сотрудника" width="270" height="260" />
+							<img
+								srcset="
+									./images/Mobile-images/Team-3-img-optim-450.jpg 450w,
+									./images/Mobile-images/Team-3-img-optim-900.jpg 900w
+								"
+								src="./images/Mobile-images/Team-3-img-optim-450.jpg"
+								alt="Фото сотрудника"
+								sizes="(100vw)"
+							/>
 
 							<div class="team-list__card">
 								<h3 class="team-list__title">Микола Тарасов</h3>
@@ -276,7 +308,15 @@
 						</li>
 
 						<li class="team-list__item">
-							<img src="./images/command-img-4.jpg" alt="Фото сотрудника" width="270" height="260" />
+							<img
+								srcset="
+									./images/Mobile-images/Team-4-img-optim-450.jpg 450w,
+									./images/Mobile-images/Team-4-img-optim-900.jpg 900w
+								"
+								src="./images/Mobile-images/Team-4-img-optim-450.jpg"
+								alt="Фото сотрудника"
+								sizes="(100vw)"
+							/>
 
 							<div class="team-list__card">
 								<h3 class="team-list__title">Михайло Єрмаков</h3>
@@ -430,6 +470,46 @@
 			</div>
 		</main>
 
+		<!-- ---------------- МОБІЛЬНЕ МЕНЮ ----------------- -->
+
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg class="menu-toggle__cross-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+					<use class="icon-cross" href="./images/symbol-defs-new.svg#icon-close_40px"></use>
+				</svg>
+			</button>
+
+			<ul class="mobile-site-nav menu-container__mobile-site-nav">
+				<li class="mobile-site-nav__item">
+					<a href="./index.html" class="mobile-site-nav__link mobile-site-nav__link--current">Студія</a>
+				</li>
+				<li class="mobile-site-nav__item">
+					<a href="./portfolio.html" class="mobile-site-nav__link">Портфоліо</a>
+				</li>
+				<li class="mobile-site-nav__item">
+					<a href="" class="mobile-site-nav__link">Контакти</a>
+				</li>
+			</ul>
+
+			<div class="mobile-contacts-set">
+				<ul class="mobile-contacts menu-container__mobile-contacts">
+					<li class="mobile-contacts__item">
+						<a href="tel:+380961111111" class="mobile-contacts__phone-link"> +38 096 111 11 11 </a>
+					</li>
+					<li class="mobile-contacts__item">
+						<a href="mailto:info@devstudio.com" class="mobile-contacts__mail-link"> info@devstudio.com </a>
+					</li>
+				</ul>
+
+				<ul class="mobile-soc-links">
+					<li class="mobile-soc-links_item"><a href="" class="mobile-soc-links_link"></a> Instagram</li>
+					<li class="mobile-soc-links_item"><a href="" class="mobile-soc-links_link"></a> Twitter</li>
+					<li class="mobile-soc-links_item"><a href="" class="mobile-soc-links_link"></a> Facebook</li>
+					<li class="mobile-soc-links_item"><a href="" class="mobile-soc-links_link"></a> LinkedIn</li>
+				</ul>
+			</div>
+		</div>
+
 		<!-- -----------------ФУТЕР----------------- -->
 		<footer class="footer">
 			<div class="footer__container container">
@@ -525,6 +605,10 @@
 				</div>
 			</div>
 		</footer>
+		<!-- СКРІПТ ДЛЯ МОДАЛЬНОГО ВІКНА -->
 		<script src="./js/modal.js"></script>
+
+		<!-- СКРІПТ ДЛЯ МОБІЛЬНОГО МЕНЮ -->
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>

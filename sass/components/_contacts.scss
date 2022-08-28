@@ -1,11 +1,11 @@
-.contacts {
-	@include centeredFlex($ai: normal, $jc: normal);
-	@extend %list;
-}
+// .contacts {
+// 	@include centeredFlex($ai: normal, $jc: normal);
+// 	@extend %list;
+// }
 
-.header__contacts {
-	margin-left: auto;
-}
+// .header__contacts {
+// 	margin-left: auto;
+// }
 
 .contacts__link {
 	@include centeredFlex($jc: flex-start);

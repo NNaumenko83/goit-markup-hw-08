@@ -10,12 +10,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	// gap: 30px;
+	justify-content: space-between;
 }
 
 .clients-list__item {
-	width: calc((100% - (15px * 4)) / 2);
-	// height:92px;
+	width: calc((100% - (15px * 2)) / 2);
+	height: 92px;
 }
 
 .clients-list__icon {

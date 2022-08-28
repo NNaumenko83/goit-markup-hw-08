@@ -1,8 +1,67 @@
 .header {
 	border-bottom: 1px solid $header-border-line-color;
+	// padding: 10px 15px;
 }
 
-// .header__container,
-// .header__nav {
-// 	@include centeredFlex($jc: flex-start);
+@media (max-width: 767px) {
+	.menu {
+		display: none;
+	}
+}
+
+// .header_logo {
+// 	margin-right: 93px;
+// 	padding-top: 24px;
+// 	padding-bottom: 25px;
 // }
+
+.header__container {
+	position: relative;
+}
+
+// @media screen and (max-width: 767px) {
+// 	.header__container {
+// 		max-width: 480px;
+// 	}
+// }
+
+.menu-button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.menu-button .icon-cross {
+	display: none;
+}
+.menu-button.is-open .icon-cross {
+	display: block;
+}
+
+.menu-button.is-open .icon-menu {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.site-nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header__contacts {
+		display: none;
+	}
+}
+
+// .header__nav {
+// 	// display: flex;
+// 	// align-items: center;
+// 	// justify-content: space-between;
+// }
+
+.header__nav {
+	@include centeredFlex($jc: space-between);
+}

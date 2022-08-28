@@ -1,13 +1,9 @@
-.features {
-	padding: 60px 15px;
-}
-
 .features-list__box-icon {
 	@include centeredFlex();
 
 	// width: 270px;
 	height: 120px;
-	margin: 30px auto;
+	margin-bottom: 30px;
 
 	background-color: $futures-images-background-color;
 	border-radius: $main-border-radius;
@@ -19,7 +15,6 @@
 
 .features-list {
 	// display: flex;
-
 	@extend %list;
 }
 
@@ -30,6 +25,7 @@
 	font-size: inherit;
 	line-height: 1.14;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .features-list__text {
@@ -37,10 +33,6 @@
 	line-height: 1.71;
 }
 
-.features-list__item {
-	// width: 270px;
-
-	&:not(:first-child) {
-		margin-left: 30px;
-	}
+.features-list__item:not(:last-child) {
+	margin-bottom: 30px;
 }
