@@ -37,7 +37,7 @@
 					</button>
 
 					<!-- ---------Навігація по сайту--------- -->
-					<ul class="site-nav">
+					<ul class="site-nav header__site-nav">
 						<li class="site-nav__item">
 							<a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
 						</li>
@@ -180,15 +180,18 @@
 
 					<ul class="team-list">
 						<li class="team-list__item">
-							<img
-								srcset="
-									./images/Mobile-images/Team-1-img-optim-450.jpg 450w,
-									./images/Mobile-images/Team-1-img-optim-900.jpg 900w
-								"
-								src="./images/Mobile-images/Team-1-img-optim-450.jpg"
-								alt="Фото сотрудника"
-								sizes="(100vw)"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/Mobile-images/Team-1-img-optim-450.jpg 450w,
+										./images/Mobile-images/Team-1-img-optim-900.jpg 900w
+									"
+									media="(max-width: 767px)"
+									sizes="(100vw)"
+								/>
+								<img src="./images/Mobile-images/Team-1-img-optim-450.jpg" alt="Фото сотрудника"
+							</picture>
+
 							<div class="team-list__card">
 								<h3 class="team-list__title">Ігор Дем'яненко</h3>
 								<p lang="en" class="team-list__text">Product Designer</p>
@@ -222,15 +225,17 @@
 						</li>
 
 						<li class="team-list__item">
-							<img
-								srcset="
-									./images/Mobile-images/Team-2-img-optim-450.jpg 450w,
-									./images/Mobile-images/Team-2-img-optim-900.jpg 900w
-								"
-								src="./images/Mobile-images/Team-2-img-optim-450.jpg"
-								alt="Фото сотрудника"
-								sizes="(100vw)"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/Mobile-images/Team-2-img-optim-450.jpg 450w,
+										./images/Mobile-images/Team-2-img-optim-900.jpg 900w
+									"
+									media="(max-width: 767px)"
+									sizes="(100vw)"
+								/>
+								<img src="./images/Mobile-images/Team-2-img-optim-450.jpg" alt="Фото сотрудника"
+							</picture>
 
 							<div class="team-list__card">
 								<h3 class="team-list__title">Ольга Рєпіна</h3>
@@ -265,15 +270,17 @@
 						</li>
 
 						<li class="team-list__item">
-							<img
-								srcset="
-									./images/Mobile-images/Team-3-img-optim-450.jpg 450w,
-									./images/Mobile-images/Team-3-img-optim-900.jpg 900w
-								"
-								src="./images/Mobile-images/Team-3-img-optim-450.jpg"
-								alt="Фото сотрудника"
-								sizes="(100vw)"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/Mobile-images/Team-3-img-optim-450.jpg 450w,
+										./images/Mobile-images/Team-3-img-optim-900.jpg 900w
+									"
+									media="(max-width: 767px)"
+									sizes="(100vw)"
+								/>
+								<img src="./images/Mobile-images/Team-3-img-optim-450.jpg" alt="Фото сотрудника"
+							</picture>
 
 							<div class="team-list__card">
 								<h3 class="team-list__title">Микола Тарасов</h3>
@@ -308,15 +315,17 @@
 						</li>
 
 						<li class="team-list__item">
-							<img
-								srcset="
-									./images/Mobile-images/Team-4-img-optim-450.jpg 450w,
-									./images/Mobile-images/Team-4-img-optim-900.jpg 900w
-								"
-								src="./images/Mobile-images/Team-4-img-optim-450.jpg"
-								alt="Фото сотрудника"
-								sizes="(100vw)"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/Mobile-images/Team-4-img-optim-450.jpg 450w,
+										./images/Mobile-images/Team-4-img-optim-900.jpg 900w
+									"
+									media="(max-width: 767px)"
+									sizes="(100vw)"
+								/>
+								<img src="./images/Mobile-images/Team-4-img-optim-450.jpg" alt="Фото сотрудника"
+							</picture>
 
 							<div class="team-list__card">
 								<h3 class="team-list__title">Михайло Єрмаков</h3>

@@ -9,10 +9,11 @@
 	align-items: center;
 
 	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.17;
+
+	// font-size: 14px;
+	// line-height: 1.71;
 
 	letter-spacing: 0.03em;
 
@@ -60,6 +61,10 @@
 }
 
 .custom-checkbox__link {
+	font-family: "Roboto";
+	font-size: 12px;
+	line-height: 1.17;
+
 	margin-left: 4px;
 	text-decoration-line: underline;
 	color: #2196f3;
