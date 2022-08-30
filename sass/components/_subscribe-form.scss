@@ -1,15 +1,13 @@
 .subscr-form {
-	// display: flex;
+	@media screen and(min-width:1200px) {
+		display: flex;
+	}
 }
 
 .subscr-form__input {
 	display: block;
 	width: 100%;
-	margin-bottom: 15px;
-	// @media screen and (min-width: 480px) {
-	// 	// width: 450px;
-	// }
-	// width: 358px;
+
 	height: 50px;
 	padding: 15px 16px;
 
@@ -40,5 +38,13 @@
 	&:hover,
 	&:focus {
 		border-color: $accent-color;
+	}
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 358px;
 	}
 }

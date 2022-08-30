@@ -2,6 +2,6 @@
 	@extend %visually-hidden;
 }
 
-.portfolio-nav__btn:first-child {
+.portfolio-nav__item:first-child .portfolio-nav__btn {
 	padding: 6px 25px;
 }

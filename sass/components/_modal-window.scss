@@ -18,6 +18,8 @@
 		pointer-events: none;
 		visibility: hidden;
 	}
+
+	overflow-y: scroll;
 }
 
 .modal {
@@ -62,7 +64,7 @@
 
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.5;
+	line-height: 1.15;
 	color: $title-text-color;
 }
 
@@ -70,8 +72,14 @@
 	@extend %icon;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
 	.modal {
-		max-width: 480px;
+		max-width: 450px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.modal {
+		width: 528px;
 	}
 }
