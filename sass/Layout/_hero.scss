@@ -4,7 +4,7 @@
 	align-items: center;
 
 	height: 400px;
-	max-width: 480px;
+	max-width: 767px;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 768px) {
 	.hero {
-		max-width: 768px;
+		max-width: 1199px;
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url("../images/Tablet-images/Hero-img-768-min.jpg");
 		@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
